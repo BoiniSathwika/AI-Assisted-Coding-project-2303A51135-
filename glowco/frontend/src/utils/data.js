@@ -1,0 +1,206 @@
+// Sample product data — used as fallback / for development without backend
+const PRODUCTS = [
+  {
+    _id: '1',
+    name: 'Gentle Foam Cleanser',
+    category: 'Cleanser',
+    price: 24,
+    rating: 4.8,
+    numReviews: 142,
+    skinTypes: ['oily', 'combination', 'sensitive'],
+    image: '🧴',
+    ingredients: ['Niacinamide', 'Aloe Vera', 'Green Tea Extract', 'Glycerin'],
+    description:
+      'A ultra-gentle foam cleanser that removes impurities without stripping the skin barrier. pH-balanced formula with niacinamide to minimize pores and green tea to soothe inflammation.',
+    badge: 'Bestseller',
+    stock: 100,
+    isFeatured: true,
+  },
+  {
+    _id: '2',
+    name: 'Hydra-Boost Moisturizer',
+    category: 'Moisturizer',
+    price: 38,
+    rating: 4.9,
+    numReviews: 289,
+    skinTypes: ['dry', 'combination', 'sensitive'],
+    image: '🫧',
+    ingredients: ['Hyaluronic Acid', 'Ceramides', 'Shea Butter', 'Peptides'],
+    description:
+      'Intense 72-hour hydration with triple-action hyaluronic acid complex. Ceramide-rich formula repairs the skin barrier and locks in moisture for visibly plumper, smoother skin.',
+    badge: 'New',
+    stock: 75,
+    isFeatured: true,
+  },
+  {
+    _id: '3',
+    name: 'Vitamin C Brightening Serum',
+    category: 'Serum',
+    price: 52,
+    rating: 4.7,
+    numReviews: 198,
+    skinTypes: ['all'],
+    image: '✨',
+    ingredients: ['15% Vitamin C', 'Ferulic Acid', 'Vitamin E', 'Niacinamide'],
+    description:
+      'High-potency 15% L-Ascorbic Acid serum stabilized with Ferulic Acid and Vitamin E. Visibly brightens, evens skin tone, and protects against environmental damage in 2 weeks.',
+    badge: 'Fan Fave',
+    stock: 60,
+    isFeatured: true,
+  },
+  {
+    _id: '4',
+    name: 'SPF 50+ Invisible Sunscreen',
+    category: 'Sunscreen',
+    price: 29,
+    rating: 4.6,
+    numReviews: 312,
+    skinTypes: ['all'],
+    image: '☀️',
+    ingredients: ['Zinc Oxide', 'Titanium Dioxide', 'Vitamin E', 'Squalane'],
+    description:
+      'Broad-spectrum mineral sunscreen that leaves absolutely zero white cast. Lightweight, non-greasy formula absorbs instantly. Fragrance-free and reef-safe.',
+    badge: 'SPF 50+',
+    stock: 120,
+    isFeatured: true,
+  },
+  {
+    _id: '5',
+    name: 'Retinol Night Serum',
+    category: 'Serum',
+    price: 64,
+    rating: 4.5,
+    numReviews: 87,
+    skinTypes: ['normal', 'combination', 'oily'],
+    image: '🌙',
+    ingredients: ['0.3% Retinol', 'Bakuchiol', 'Peptides', 'Niacinamide'],
+    description:
+      'Encapsulated retinol technology for minimal irritation and maximum anti-aging efficacy. Paired with bakuchiol for a synergistic effect on fine lines, wrinkles, and uneven texture.',
+    badge: null,
+    stock: 45,
+    isFeatured: false,
+  },
+  {
+    _id: '6',
+    name: 'Barrier Repair Cream',
+    category: 'Moisturizer',
+    price: 44,
+    rating: 4.9,
+    numReviews: 156,
+    skinTypes: ['dry', 'sensitive'],
+    image: '🛡️',
+    ingredients: ['Ceramides', 'Fatty Acids', 'Cholesterol', 'Oat Extract'],
+    description:
+      'Restores and strengthens the skin\'s natural moisture barrier with the optimal 3:1:1 ceramide-to-fatty acid-to-cholesterol ratio. Clinically proven to reduce sensitivity in 1 week.',
+    badge: 'Dermatologist Pick',
+    stock: 80,
+    isFeatured: false,
+  },
+  {
+    _id: '7',
+    name: 'BHA Exfoliant Toner',
+    category: 'Cleanser',
+    price: 32,
+    rating: 4.4,
+    numReviews: 203,
+    skinTypes: ['oily', 'combination'],
+    image: '💧',
+    ingredients: ['2% Salicylic Acid', 'Witch Hazel', 'Zinc PCA', 'Tea Tree'],
+    description:
+      'Gentle 2% salicylic acid chemical exfoliant that deeply unclogs pores, reduces blackheads, and controls excess sebum. Use 2–3 times per week for best results.',
+    badge: null,
+    stock: 90,
+    isFeatured: false,
+  },
+  {
+    _id: '8',
+    name: 'Peptide Eye Cream',
+    category: 'Serum',
+    price: 48,
+    rating: 4.7,
+    numReviews: 94,
+    skinTypes: ['all'],
+    image: '👁️',
+    ingredients: ['Matrixyl 3000', 'Caffeine', 'Hyaluronic Acid', 'Retinol'],
+    description:
+      'Advanced peptide eye cream targeting dark circles, puffiness, and fine lines. Caffeine constricts blood vessels to reduce puffiness while Matrixyl 3000 stimulates collagen production.',
+    badge: 'New',
+    stock: 55,
+    isFeatured: false,
+  },
+];
+
+export const BLOG_POSTS = [
+  {
+    id: 1,
+    title: 'The Science Behind Hyaluronic Acid',
+    category: 'Ingredients',
+    date: 'Mar 28, 2026',
+    readTime: '5 min',
+    emoji: '💧',
+    excerpt:
+      'Discover how this humectant can hold 1000x its weight in water and transform your hydration routine.',
+    content:
+      'Hyaluronic acid (HA) is a naturally occurring polysaccharide found in the human body. It acts as a powerful humectant...',
+  },
+  {
+    id: 2,
+    title: 'Building Your Morning Skincare Routine',
+    category: 'Routine',
+    date: 'Mar 20, 2026',
+    readTime: '7 min',
+    emoji: '🌅',
+    excerpt:
+      'A step-by-step guide to a powerful 5-minute morning routine that protects and preps your skin all day.',
+    content:
+      'A consistent morning skincare routine is the foundation of healthy, glowing skin...',
+  },
+  {
+    id: 3,
+    title: 'Retinol 101: When to Start & How',
+    category: 'Anti-Aging',
+    date: 'Mar 12, 2026',
+    readTime: '8 min',
+    emoji: '🌙',
+    excerpt:
+      'Everything about introducing the gold-standard anti-aging ingredient into your routine without irritation.',
+    content: 'Retinol is the most studied anti-aging ingredient in dermatology...',
+  },
+  {
+    id: 4,
+    title: 'Oily Skin Myths Debunked',
+    category: 'Skin Types',
+    date: 'Mar 5, 2026',
+    readTime: '4 min',
+    emoji: '✨',
+    excerpt: "You don't need to strip your skin of oil. Here's what actually works for managing shine.",
+    content:
+      'Oily skin is one of the most misunderstood skin types. Many people believe they need to dry it out...',
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    name: 'Priya M.',
+    skin: 'Combination Skin',
+    text: 'The Vitamin C serum changed my skin in just 3 weeks. My hyperpigmentation is 80% gone!',
+    rating: 5,
+    avatar: 'P',
+  },
+  {
+    name: 'Sarah K.',
+    skin: 'Sensitive Skin',
+    text: "Finally found products that don't irritate my skin. The Barrier Repair Cream is my holy grail.",
+    rating: 5,
+    avatar: 'S',
+  },
+  {
+    name: 'Aisha R.',
+    skin: 'Oily Skin',
+    text: 'The skin quiz recommended exactly what I needed. My skin has never looked this healthy!',
+    rating: 5,
+    avatar: 'A',
+  },
+];
+
+export default PRODUCTS;
